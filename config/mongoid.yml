@@ -9,6 +9,13 @@ development:
       hosts:
         - localhost
 
+test:
+  sessions:
+    default:
+      database: whatidid_test
+      hosts:
+        - localhost
+
 production:
   sessions:
     default:

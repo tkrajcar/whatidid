@@ -7,3 +7,5 @@ gem "require_all"
 gem "oj" # fast JSONs
 gem "racksh" # console
 gem "thin"
+gem "mongoid", "~> 3.1.6"
+gem "bson_ext"

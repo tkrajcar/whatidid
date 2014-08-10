@@ -1,0 +1,20 @@
+# mongoid 3.x
+#
+# As discussed in: http://blog.mongolab.com/2014/02/mongodb-driver-tips-tricks-mongoid-3
+#
+development:
+  sessions:
+    default:
+      database: whatidid_dev
+      hosts:
+        - localhost
+
+production:
+  sessions:
+    default:
+      uri: <%= ENV["MONGOLAB_URI"] %>
+      options:
+        consistency: :strong
+        max_retries: 30
+        retry_interval: 1
+        timeout: 15

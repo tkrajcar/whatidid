@@ -20,6 +20,7 @@ GEM
     daemons (1.1.9)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
+    dotenv (0.7.0)
     equalizer (0.0.9)
     eventmachine (1.0.3)
     grape (0.8.0)
@@ -43,9 +44,10 @@ GEM
     moped (1.5.2)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    newrelic_rpm (3.9.1.236)
     oj (2.10.0)
     origin (1.1.0)
-    rack (1.5.2)
+    rack (1.4.5)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-mount (0.8.3)
@@ -73,8 +75,10 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
+  dotenv
   grape (~> 0.8.0)
   mongoid (~> 3.1.6)
+  newrelic_rpm (~> 3.9.1)
   oj
   racksh
   require_all

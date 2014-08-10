@@ -9,3 +9,5 @@ gem "racksh" # console
 gem "thin"
 gem "mongoid", "~> 3.1.6"
 gem "bson_ext"
+gem "dotenv"
+gem "newrelic_rpm", "~> 3.9.1"

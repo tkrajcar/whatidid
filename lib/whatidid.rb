@@ -1,7 +1,8 @@
 require 'grape'
 require 'mongoid'
-
 Mongoid.load! "config/mongoid.yml"
+require 'require_all'
+require_all 'lib'
 
 class WhatIDid < Grape::API
   version 'v1', using: :header, vendor: 'WhatIDid'

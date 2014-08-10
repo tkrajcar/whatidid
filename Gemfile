@@ -12,8 +12,11 @@ gem "bson_ext"
 gem "dotenv"
 gem "newrelic_rpm", "~> 3.9.1"
 
-group :development, :test do
+group :development do
   gem "rake"
+end
+
+group :development, :test do
   gem "rspec", "~> 2.14.1"
   gem 'rack-test'
 end

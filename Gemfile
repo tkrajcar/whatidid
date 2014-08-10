@@ -13,6 +13,7 @@ gem "dotenv"
 gem "newrelic_rpm", "~> 3.9.1"
 
 group :development, :test do
+  gem "rake"
   gem "rspec", "~> 2.14.1"
   gem 'rack-test'
 end

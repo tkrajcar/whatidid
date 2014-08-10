@@ -11,5 +11,13 @@ class WhatIDid < Grape::API
     get do
       Accomplishment.all
     end
+
+    desc "Create an accomplishment."
+    params do
+      requires :description, type: String, desc: "Your accomplishment."
+    end
+    post do
+      Accomplishment.create!(description: params[:description])
+    end
   end
 end

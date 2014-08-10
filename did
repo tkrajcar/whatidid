@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+if ARGV.length > 1
+  puts "usage: did \"description of what you did\"" and exit
+end
+
+require "net/http"
+
+url = URI.parse('http://whatidid.herokuapp.com/accomplishments')
+
+post_args = {
+   'description' => ARGV[0],
+}
+puts post_args.to_s
+resp, data = Net::HTTP.post_form(url, post_args)
+puts resp.code

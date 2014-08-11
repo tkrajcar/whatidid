@@ -14,6 +14,9 @@ gem "newrelic_rpm", "~> 3.9.1"
 
 group :development do
   gem "rake"
+  gem "guard"
+  gem 'guard-rspec', require: false
+  gem 'guard-rack', require: false
 end
 
 group :development, :test do
